@@ -1,2 +1,6 @@
 # Databricks notebook source
-!pip install yfinance==0.2.51
+!pip uninstall yfinance
+
+# COMMAND ----------
+
+import yfinance as yf
