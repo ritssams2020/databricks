@@ -29,8 +29,8 @@
 import mlflow
 
 mlflow.set_registry_uri("databricks-uc")
-CATALOG_NAME = "main"
-SCHEMA_NAME = "default"
+CATALOG_NAME = "dbacademy"
+SCHEMA_NAME = "labuser10074469_1745415464"
 
 # COMMAND ----------
 
