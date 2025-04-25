@@ -21,6 +21,10 @@
 
 # COMMAND ----------
 
+# MAGIC %run ../Includes/Common-Setup
+
+# COMMAND ----------
+
 # MAGIC %md ## Unity Catalog setup
 # MAGIC Set the catalog and schema where the model will be registered. You must have USE CATALOG privilege on the catalog, and CREATE MODEL and USE SCHEMA privileges on the schema. Change the catalog and schema here if necessary.
 
@@ -29,8 +33,14 @@
 import mlflow
 
 mlflow.set_registry_uri("databricks-uc")
-CATALOG_NAME = "dbacademy"
-SCHEMA_NAME = "labuser10074469_1745415464"
+CATALOG_NAME = DA.catalog_name
+SCHEMA_NAME = DA.schema_name
+# CATALOG_NAME = "dbacademy"
+# SCHEMA_NAME = "labuser10074469_1745415464"
+
+# COMMAND ----------
+
+SCHEMA_NAME
 
 # COMMAND ----------
 
