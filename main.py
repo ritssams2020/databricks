@@ -24,7 +24,7 @@ schema = StructType([
 ])
 
 df = spark.createDataFrame(data, schema)
-df.write.mode('overwrite').saveAsTable('dbacademy.labuser10344139_1748948195.df')
+df.write.mode('overwrite').saveAsTable('dbacademy.labuser10344139_1749015561.df')
 df.show()
 #pycharm checkout
 ##test
